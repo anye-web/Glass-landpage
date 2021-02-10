@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    --secondary-color: #426696;
+    --light-color: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+
+/* *******
+ Global
+   ******* */
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+
+/* *******
+Main Section
+   ******* */
+
+#main-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section .glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 20px;
+    background: var(--light-color);
+    backdrop-filter: blur(1rem);
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+/* *******
+ profile Section
+   ******* */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    border-radius: 20px;
+    height: 100%;
+}
+
+.profile-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.stream-info {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.stream-info h3 {
+    margin-left: 2rem;
+}
+
+.stream-info img {
+    width: 30px;
+}
+
+.controller {
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.controller h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.controller img {
+    width: 100px;
+}
+
+
+/* *******
+ Active Section
+   ******* */
+
+.active {
+    padding: 3rem;
+}
+
+.intro {
+    padding-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.intro input {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    color: var(--secondary-color);
+}
+
+.intro input:focus,
+.intro button:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+}
+
+.intro input::placeholder {
+    color: var(--secondary-color);
+}
+
+.intro button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--secondary-color);
+    position: relative;
+    right: 30px;
+}
+
+.game-info {
+    background: linear-gradient( to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    border-radius: 20px;
+    padding: 1rem 0;
+    margin-bottom: 10px;
+}
+
+.game-info img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.progress-bar {
+    background: rgb(236, 236, 236);
+    width: 100%;
+    height: 18px;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+
+.progress-bar .progress {
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--primary-color);
+}
+
+.percentage {
+    text-align: center;
+    padding-top: 20px;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.percentage h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* *******
+ Circle Section
+   ******* */
+
+.cirlce1,
+.cirlce2 {
+    background: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+}
+
+.cirlce1 {
+    top: 10px;
+    right: 150px;
+}
+
+.cirlce2 {
+    bottom: 5px;
+    left: 150px;
+}
